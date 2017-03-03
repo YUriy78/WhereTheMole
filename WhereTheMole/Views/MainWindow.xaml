@@ -1,0 +1,65 @@
+﻿<catel:Window x:Class="WhereTheMole.Views.MainWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:catel="http://catel.codeplex.com"
+              WindowStartupLocation="CenterScreen"
+              Icon="/Images/mole.png"
+              Width="780"
+              Height="790"
+              ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Margin="0, 10" FontSize="18" Foreground="Blue" Text="Счет:" />
+            <TextBlock Margin="5, 10" FontSize="18" Foreground="Red" Text="{Binding Count}" />
+        </StackPanel>
+        <Canvas Grid.Row="1">
+            <Image  Source="/Images/burrow.png" />
+            <Image Margin="-10" Source="/Images/sun.png" RenderTransformOrigin="0.5, 0.5" Grid.Column="4" >
+                <Image.RenderTransform>
+                    <RotateTransform/>
+                </Image.RenderTransform>
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="(Image.RenderTransform).(RotateTransform.Angle)" 
+                                             To="360" Duration="0:0:10" RepeatBehavior="Forever"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+            <Image Margin="40, -10"  Source="/Images/Cloud.png" />
+            <Image Margin="200, -10" Source="/Images/Cloud.png" />
+            <Image Margin="500, -10" Source="/Images/Cloud.png" />
+            <Image Margin="650, -10" Source="/Images/Cloud.png" />
+            <Image Cursor="Cross" Margin="{Binding MarginMole}"  Source="{Binding Mole}">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding ClickMoleCommand}" />
+                </Image.InputBindings>
+            </Image>
+            <Image Cursor="Cross" Margin="{Binding MarginMouse}"  Source="{Binding Mouse}"/>
+            <Image Cursor="Cross" Margin="{Binding MarginMole}"  Source="{Binding Carrot}"/>
+        </Canvas>
+        <StackPanel HorizontalAlignment="Center" Background="#ffffe0" Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Margin="10">
+                <Hyperlink Command="{Binding ClickLinkCommand}"
+                           TextDecorations="None" 
+                           FontWeight="Bold" 
+                           FontSize="18" 
+                           Foreground="#7e462b"> 
+                           Скачать игру "Kто под шляпой?" >>
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+
+    </Grid>
+
+</catel:Window>

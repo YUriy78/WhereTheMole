@@ -1,0 +1,14 @@
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\output\Debug\WhereTheMole.exe.config
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\output\Debug\WhereTheMole.exe
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\output\Debug\WhereTheMole.pdb
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\Views\MainWindow.baml
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\App.baml
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\Views\MainWindow.g.cs
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\App.g.cs
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole_MarkupCompile.cache
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.g.resources
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.Properties.Resources.resources
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.exe
+c:\users\user\documents\visual studio 2012\Projects\WhereTheMole\WhereTheMole\obj\Debug\WhereTheMole.pdb
